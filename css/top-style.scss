@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+$baseColor: #f9f8f6;
+$brawnColor: #887f69;
+$skinColor: #e2ddd4;
+$grayColor: #b0b0b0;
+$redColor: #9d1a2d;
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Verdana, "MS Pゴシック", sans-serif;
+
+//  ------------- Over all layout --------------- //
+
+html {
+    font-size: 62.5%;
+    font-family: $ja_font;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+    font-size: $size + px;
+    font-size: ($size/ $base) * 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $brawnColor;
+  
+  &:hover {
+    color: lighten($brawnColor, 10%);
+  }
+}
+
+h4 {
+  @include fontsize(16);
+}
+
+
+// ------------- Header layout ----------------- //
+
+header {
+  nav {
+    @media (min-width: 551px) {
+      .pc-header {
+        
+        
+      }
+      // .pc-header
+    }
+  }
+}

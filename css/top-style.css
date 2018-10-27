@@ -1,0 +1,16 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Verdana, "MS Pゴシック", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #887f69; }
+  a:hover {
+    color: #a09884; }
+
+h4 {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+/*# sourceMappingURL=top-style.css.map */
