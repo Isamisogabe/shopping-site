@@ -32,41 +32,41 @@
   <body>
     <header>
       <nav class="navbar container">
-        <div class="row">
-          <div class="twelve columns">
-            <div class="pc-header">
-              <div id="pc-header-list">
-                <div class="navbar-brand">
-                  <img src="images/top/logo.png" alt="ロゴマーク" srcset="images/top/logo@2x.png 2x">
-                </div>
-                <ul>
-                  <li><a href="#"><img src="images/top/menu_login.png" alt="ログイン"></a></li>
-                  <li><a href="#"><img src="images/top/menu_cart.png" alt="カート"></a></li>
-                  <li><a href="#"><img src="images/top/menu_mypage.png" alt="マイページ"></a></li>
-                  <li><a href="#"><img src="images/top/menu_guide.png" alt="ショッピングガイド"></a></li>
-                </ul>
-                
-                <i><img src="images/top/facebook.png" alt="facebook" ></i>
-                <i><img src="images/top/insta.png" alt="instagram"></i>
+        
+        <div class="pc-header">
+          <div class="row navibox">
+            <div class="six columns ">
+              <div class="navbar-brand">
+                <img src="images/top/logo.png" alt="ロゴマーク" srcset="images/top/logo@2x.png 2x">
               </div>
             </div>
-            
-            <div class="sp-header">
-              <div id="sp-header-title">
-                <img src="images/top_sp/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png 2x">
-              </div>
-              <div id="sp-header-list">
-                <i><img src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x"></i>
-                <i><img src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x"></i>
-                <img src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x" >
-                <ul id="sp-header-toggle">
-                  <li>LOGIN</li>
-                  <li>CART</li>
-                  <li>MY PAGE</li>
-                  <li>SHOPPING GUIDE</li>
-                </ul>
-              </div>
+            <div class="six columns">
+              <ul>
+                <li><a href="#"><img src="images/top/menu_login.png" alt="ログイン"></a></li>
+                <li><a href="#"><img src="images/top/menu_cart.png" alt="カート"></a></li>
+                <li><a href="#"><img src="images/top/menu_mypage.png" alt="マイページ"></a></li>
+                <li><a href="#"><img src="images/top/menu_guide.png" alt="ショッピングガイド"></a></li>
+                <li><a href="#"><i><img src="images/top/facebook.png" alt="facebook" ></i></li>
+                <li><a href="#"><i><img src="images/top/insta.png" alt="instagram"></i></a></li>
+              </ul>
             </div>
+          </div>
+        </div>
+        
+        <div class="sp-header">
+          <div id="sp-header-title">
+            <img src="images/top_sp/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png 2x">
+          </div>
+          <div id="sp-header-list">
+            <i><img src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x"></i>
+            <i><img src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x"></i>
+            <img src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x" >
+            <ul id="sp-header-toggle">
+              <li>LOGIN</li>
+              <li>CART</li>
+              <li>MY PAGE</li>
+              <li>SHOPPING GUIDE</li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -83,7 +83,7 @@
               <div class="new-items-title">
                 <img src="images/top/title_newitems.png" alt="NEW ITEMS">
               </div>
-              <div class="sp-new-items-title">
+              <div class="sp new-items-title">
                 <img src="images/top_sp/title_new_item.png" alt="NEW ITEMS" srcset="images/top_sp/title_new_item@2x.png 2x">
               </div>
               <div class="items">
@@ -125,7 +125,7 @@
               <div class="popular-items-title">
                 <img src="images/top/title_popular.png" alt="NEW ITEMS">
               </div>
-              <div class="sp-popular-items-title">
+              <div class="sp popular-items-title">
                 <img src="images/top_sp/title_popular.png" alt="NEW ITEMS" srcset="images/top_sp/title_popular@2x.png 2x">
               </div>
               <div class="items">
@@ -163,11 +163,11 @@
             </div>
             <!--  popular items  END ---->
             
-            <div id="shiopping-guide">
+            <div id="shopping-guide">
               <div class="shopping-guide-title">
                 <img src="images/top/title_guide.png" alt="SHOPPING GUIDE">
               </div>
-              <div class="sp-shopping-items-title">
+              <div class="sp shopping-guide-title">
                 <img src="images/top_sp/title_guide.png" alt="SHOPPING GUIDE" srcset="images/top_sp/title_guide@2x.png 2x">
               </div>
               
@@ -179,7 +179,7 @@
                     <li>〇〇運輸</li>
                     <p>送料　￥300円</p>
                     <li>ゆうパケット</li>
-                    <p>ポスト投函となります。日時指定不可</p>
+                    <p>ポスト投函となります。</br>日時指定不可</p>
                   </ul>
                 </div>
                 
@@ -203,32 +203,38 @@
         </div>
         <div class="three columns">
           <div id="sidebar">
+            
             <div id="item-search">
               <img src="images/top/itemserch.png" alt="ITEM SEARCH">
-              <input type="text" name="search" placeholder="Search..">
+              <div class="input-tag">
+                <input type="search" name="search" placeholder="Search..">
+                <a href="#"><img src="images/top/search_icon.png" alt="ITEM SEARCH"></a>
+              </div>
             </div>
             <div id="pagelink">
               <div class="side-title">
                 <img src="images/top/pagelink.png" alt="PAGELINK">
+                <img src="images/top/next_icon.png" alt="" class="title-icon">
               </div>
               <ul>
-                <li><a href="#">TOPページ</a></li>
-                <li><a href="#">製品ページ</a></li>
-                <li><a href="#">リストページ</a></li>
+                <li><a href="#">TOPページ</a><img src="images/top/next_icon_gray.png" alt=""></li>
+                <li><a href="#">製品ページ</a><img src="images/top/next_icon_gray.png" alt=""></li>
+                <li><a href="#">リストページ</a><img src="images/top/next_icon_gray.png" alt=""></li>
               </ul>
             </div>
             
             <div id="categories">
               <div id="side-title">
                 <img src="images/top/categories.png" alt="CATEGORIES">
+                <img src="images/top/next_icon.png" alt="" class="title-icon">
               </div>
               <ul>
-                <li>カテゴリー名</li>
-                <li>カテゴリー名</li>
-                <li>カテゴリー名</li>
-                <li>カテゴリー名</li>
-                <li>カテゴリー名</li>
-                <li>カテゴリー名</li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
+                <li>カテゴリー名<img src="images/top/next_icon_gray.png" alt=""></li>
               </ul>
             </div>
             
@@ -238,8 +244,10 @@
               </div>
               <div id="about-content">
                 <img src="images/top/about_img.jpg" alt="about">
-                <p>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</p>
-                <a href="#"><img src="images/top/more_btn.png" alt="BUTTON"></a>
+                <div class="about-description">
+                  <p>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</p>
+                  <a href="#"><img src="images/top/more_btn.png" class="btn" alt="BUTTON"></a>
+                </div>
               </div>
             </div>
             
@@ -249,24 +257,37 @@
               </div>
               <div id="shopinfo-content">
                 <img src="images/top/shopinfo_img.jpg" alt="shopinfo">
-                <p>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</p>
-                <a href="#"><img src="images/top/more_btn.png" alt="BUTTON"></a>
+                <div class="shopinfo-description">
+                  <p>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</p>
+                  <a href="#"><img src="images/top/more_btn.png" class="btn" alt="BUTTON"></a>
+                </div>
               </div>
             </div>
+            
+          </div>
+          <!-- sidebar -->
+          
+        </div>
+      </div>
+      <div id="pagetop">
+        <p> ↑　PAGE TOP</p>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <ul>
+              <li>特定額取引に基づく表記</li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">マイページ</a></li>
+            </ul>
+      
+            <p>copyright (C) APPLE BERRY all rights reserved</p>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <ul>
-        <li><a href="#">特定額取引に基づく表記</a></li>
-        <li><a href="#">プライバシーポリシー</a></li>
-        <li><a href="#">マイページ</a></li>
-      </ul>
-      
-      <p>copyright (C) APPLE BERRY all rights reserved</p>
     </footer>
-    
-  
   </body>
 </html>
