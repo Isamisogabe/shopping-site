@@ -21,13 +21,19 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    
+    <!-- Owl Carousel CSS -->
+    
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/top-style.css">
-  
-  
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-  
+    
+    <!-- javascript -->
+    <script src="ja/main.js"></script>
+    <script src="js/cowlcarousel/owl.carousel.min.js"></script>
   </head>
   <body>
     <header>
@@ -60,12 +66,12 @@
           <div id="sp-header-list">
             <i><img src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x"></i>
             <i><img src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x"></i>
-            <img src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x" >
+            <img id="humburger-btn" src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x" >
             <ul id="sp-header-toggle">
-              <li>LOGIN</li>
-              <li>CART</li>
-              <li>MY PAGE</li>
-              <li>SHOPPING GUIDE</li>
+              <a href=""><li>LOGIN</li></a>
+              <a href=""><li>CART</li></a>
+              <a href=""><li>MY PAGE</li></a>
+              <a href=""><li>SHOPPING GUIDE</li></a>
             </ul>
           </div>
         </div>
@@ -77,7 +83,25 @@
         <div class="nine columns">
           <div id="main">
             <div id="cover">
-              <img src="images/top/ca_banner.jpg" alt="バナー">
+              <div class="slideWrap">
+                <div class="owl-carousel owl-theme">
+                  <div><img src="images/top/ca_banner.jpg" alt="バナー"></div>
+                  <div><img src="images/top/ca_banner.jpg" alt="バナー"></div>
+                  <div><img src="images/top/ca_banner.jpg" alt="バナー"></div>
+                  <div><img src="images/top/ca_banner.jpg" alt="バナー"></div>
+                  
+                </div>
+                <!-- 
+                <ul class="owl-carousel owl-theme">
+                  <li><img src="images/top/ca_banner.jpg" alt="バナー"></li>
+                  <li><img src="images/top/ca_banner.jpg" alt="バナー"></li>
+                  <li><img src="images/top/ca_banner.jpg" alt="バナー"></li>
+                  <li><img src="images/top/ca_banner.jpg" alt="バナー"></li>
+                </ul>
+                -->
+              </div>
+              <a href="javascript:void(0);" class="btnPrev"></a>
+              <a href="javascript:void(0);" class="btnNext"></a>
             </div>
             <div id="new-items">
               <div class="new-items-title">
@@ -290,5 +314,10 @@
         </div>
       </div>
     </footer>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

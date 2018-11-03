@@ -65,8 +65,8 @@ header .navbar .sp-header {
 #contents #main .sp {
   display: none; }
 #contents #main .breadcrumb {
-  margin: 10px 0;
-  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  padding: 5px;
   background-color: #e2ddd4;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -101,6 +101,9 @@ header .navbar .sp-header {
     padding: 10px;
     border-right: 2px solid #f9f8f6;
     border-bottom: 2px solid #f9f8f6; }
+    #contents #main #new-items .items .item img {
+      width: 100%;
+      height: auto; }
 #contents #main #new-items .direction {
   overflow: hidden;
   *zoom: 1; }
@@ -463,8 +466,9 @@ header .navbar .sp-header {
 footer {
   padding-top: 20px; }
   footer ul {
+    text-align: center;
     border-top: 2px solid #887f69;
-    text-align: center; }
+    padding-top: 20px; }
     footer ul li {
       display: inline-block;
       list-style-type: square;

@@ -156,7 +156,8 @@ header .navbar {
           width: 48.65%; }
           #contents #main #detail-item .item-images .sub-images .image img {
             max-width: 100%;
-            height: auto; }
+            height: auto;
+            cursor: pointer; }
         #contents #main #detail-item .item-images .sub-images .gray-image {
           width: 48.65%; }
           #contents #main #detail-item .item-images .sub-images .gray-image img {

@@ -137,8 +137,8 @@ header {
     }
     
     .breadcrumb {
-      margin: 10px 0;
-      padding: 5px 10px;
+      margin: 0 0 10px 0;
+      padding: 5px;
       background-color: $skinColor;
       @include border-radius(4px);
       &:before {
@@ -175,6 +175,10 @@ header {
           padding: 10px;
           border-right: 2px solid $baseColor;
           border-bottom: 2px solid $baseColor;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       .direction {
@@ -672,8 +676,9 @@ footer {
   
   padding-top: 20px;
   ul {
-    border-top: 2px solid $brawnColor;
     text-align: center;
+    border-top: 2px solid $brawnColor;
+    padding-top: 20px;
     li {
       display: inline-block;
       list-style-type: square;
