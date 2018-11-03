@@ -111,10 +111,6 @@ header .navbar .sp-header {
     padding: 10px 40px;
     color: white;
     font-weight: bold; }
-    #contents #main #new-items .direction #back a {
-      color: white; }
-      #contents #main #new-items .direction #back a:hover {
-        color: #e5e0d7; }
   #contents #main #new-items .direction #next {
     display: inline-block;
     float: right;
@@ -122,10 +118,6 @@ header .navbar .sp-header {
     padding: 10px 40px;
     color: white;
     font-weight: bold; }
-    #contents #main #new-items .direction #next a {
-      color: white; }
-      #contents #main #new-items .direction #next a:hover {
-        color: #e5e0d7; }
 @media (max-width: 550px) {
   #contents #main #new-items .new-items-title {
     display: none; }
@@ -150,25 +142,14 @@ header .navbar .sp-header {
       padding: 10px;
       border-right: 2px solid #f9f8f6;
       border-bottom: 2px solid #f9f8f6; }
-      #contents #main #new-items .items .item img {
-        width: 100%;
-        height: auto; }
   #contents #main #new-items .direction #back {
     display: inline-block;
     float: left;
     background-color: #887f69; }
-    #contents #main #new-items .direction #back a {
-      color: #f9f8f6; }
-      #contents #main #new-items .direction #back a:hover {
-        color: #e5e0d7; }
   #contents #main #new-items .direction #next {
     display: inline-block;
     float: right;
-    background-color: #887f69; }
-    #contents #main #new-items .direction #next a {
-      color: #f9f8f6; }
-      #contents #main #new-items .direction #next a:hover {
-        color: #e5e0d7; } }
+    background-color: #887f69; } }
 #contents #main #watched-items .watched-items-title {
   margin: 20px 0; }
 #contents #main #watched-items .items {
@@ -189,9 +170,6 @@ header .navbar .sp-header {
     padding: 10px;
     border-right: 2px solid #f9f8f6;
     border-bottom: 2px solid #f9f8f6; }
-    #contents #main #watched-items .items .item img {
-      width: 100%;
-      height: auto; }
 @media (max-width: 550px) {
   #contents #main #watched-items .watched-items-title {
     display: none; }
@@ -220,91 +198,72 @@ header .navbar .sp-header {
   margin: 20px 0; }
   #contents #main #shopping-guide .shopping-guide-title {
     margin: 20px 0; }
-  #contents #main #shopping-guide .row {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: stretch;
-    align-items: stretch; }
-    #contents #main #shopping-guide .row #derivery-description {
-      background-color: white;
-      padding: 10px; }
-      #contents #main #shopping-guide .row #derivery-description h4 {
-        font-size: 16px;
-        font-size: 1.6rem;
-        color: #887f69;
-        font-weight: bold; }
-      #contents #main #shopping-guide .row #derivery-description div h4 {
-        margin-bottom: 0;
-        color: #887f69;
-        list-style-type: square;
-        font-weight: bold;
-        font-size: 14px;
-        font-size: 1.4rem; }
-        #contents #main #shopping-guide .row #derivery-description div h4 span {
-          font-size: 22px;
-          font-size: 2.2rem; }
-      #contents #main #shopping-guide .row #derivery-description div p {
-        font-size: 12px;
-        font-size: 1.2rem;
-        margin-bottom: 10px; }
-    #contents #main #shopping-guide .row #cashing {
-      padding: 10px;
-      background-color: white; }
-      #contents #main #shopping-guide .row #cashing h4 {
-        font-size: 16px;
-        font-size: 1.6rem;
-        color: #887f69;
-        font-weight: bold; }
-      #contents #main #shopping-guide .row #cashing div h4 {
-        margin-bottom: 0;
-        color: #887f69;
-        font-weight: bold;
-        font-size: 14px;
-        font-size: 1.4rem; }
-        #contents #main #shopping-guide .row #cashing div h4 span {
-          font-size: 22px;
-          font-size: 2.2rem; }
-      #contents #main #shopping-guide .row #cashing div p {
-        font-size: 12px;
-        font-size: 1.2rem;
-        margin-bottom: 10px; }
+  #contents #main #shopping-guide #derivery-description {
+    background-color: white;
+    padding: 10px; }
+    #contents #main #shopping-guide #derivery-description h4 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #887f69;
+      font-weight: bold; }
+    #contents #main #shopping-guide #derivery-description ul li {
+      margin-bottom: 0;
+      color: #887f69;
+      list-style-type: square;
+      font-weight: bold;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    #contents #main #shopping-guide #derivery-description ul p {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin-bottom: 10px; }
+  #contents #main #shopping-guide #cashing {
+    padding: 10px;
+    background-color: white; }
+    #contents #main #shopping-guide #cashing h4 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #887f69;
+      font-weight: bold; }
+    #contents #main #shopping-guide #cashing ul li {
+      margin-bottom: 0;
+      color: #887f69;
+      list-style-type: square;
+      font-weight: bold;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    #contents #main #shopping-guide #cashing ul p {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin-bottom: 10px; }
 @media (max-width: 550px) {
   #contents #main #shopping-guide .shopping-guide-title {
     display: none; }
   #contents #main #shopping-guide .sp.shopping-guide-title {
     display: block;
     text-align: center; }
-  #contents #main #shopping-guide .row {
-    -webkit-flex-direction: column;
-    flex-direction: column; }
-    #contents #main #shopping-guide .row #derivery-description {
-      margin-bottom: 10px; }
-      #contents #main #shopping-guide .row #derivery-description h4 {
-        font-size: 22px;
-        font-size: 2.2rem; }
-      #contents #main #shopping-guide .row #derivery-description ul li {
-        font-size: 20px;
-        font-size: 2rem; }
-      #contents #main #shopping-guide .row #derivery-description ul p {
-        font-size: 14px;
-        font-size: 1.4rem; }
-    #contents #main #shopping-guide .row #cashing {
-      margin-bottom: 10px; }
-      #contents #main #shopping-guide .row #cashing h4 {
-        font-size: 22px;
-        font-size: 2.2rem;
-        margin-bottom: 0; }
-      #contents #main #shopping-guide .row #cashing div h4 {
-        font-size: 16px;
-        font-size: 1.6rem;
-        margin: 0; }
-      #contents #main #shopping-guide .row #cashing div p {
-        font-size: 14px;
-        font-size: 1.4rem; } }
+  #contents #main #shopping-guide #derivery-description {
+    margin-bottom: 10px; }
+    #contents #main #shopping-guide #derivery-description h4 {
+      font-size: 22px;
+      font-size: 2.2rem; }
+    #contents #main #shopping-guide #derivery-description ul li {
+      font-size: 20px;
+      font-size: 2rem; }
+    #contents #main #shopping-guide #derivery-description ul p {
+      font-size: 14px;
+      font-size: 1.4rem; }
+  #contents #main #shopping-guide #cashing {
+    margin-bottom: 10px; }
+    #contents #main #shopping-guide #cashing h4 {
+      font-size: 22px;
+      font-size: 2.2rem; }
+    #contents #main #shopping-guide #cashing ul li {
+      font-size: 20px;
+      font-size: 2rem; }
+    #contents #main #shopping-guide #cashing ul p {
+      font-size: 14px;
+      font-size: 1.4rem; } }
 #contents #sidebar .side-title {
   background-color: #887f69;
   padding: 10px; }
@@ -322,21 +281,7 @@ header .navbar .sp-header {
       -webkit-border-radius: 0;
       border-radius: 0;
       border: 0;
-      margin: 0;
-      font-style: italic;
-      color: black; }
-      #contents #sidebar #item-search .input-tag input:placeholder-shown {
-        color: #bcb19a; }
-      #contents #sidebar #item-search .input-tag input::-webkit-input-placeholder {
-        color: #bcb19a; }
-      #contents #sidebar #item-search .input-tag input:-moz-placeholder {
-        color: #bcb19a;
-        opacity: 1; }
-      #contents #sidebar #item-search .input-tag input::-moz-placeholder {
-        color: #bcb19a;
-        opacity: 1; }
-      #contents #sidebar #item-search .input-tag input:-ms-input-placeholder {
-        color: #bcb19a; }
+      margin: 0; }
     #contents #sidebar #item-search .input-tag img {
       position: absolute;
       top: 10px;
@@ -461,9 +406,9 @@ header .navbar .sp-header {
     font-weight: bold; } }
 
 footer {
+  border-top: 2px solid #887f69;
   padding-top: 20px; }
   footer ul {
-    border-top: 2px solid #887f69;
     text-align: center; }
     footer ul li {
       display: inline-block;
@@ -477,4 +422,4 @@ footer {
     color: #b6b0a1;
     text-align: center; }
 
-/*# sourceMappingURL=list-style.css.map */
+/*# sourceMappingURL=product-style.csfdfads.map */

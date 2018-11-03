@@ -43,15 +43,19 @@
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  .container {
+  .container, side-container {
     width: 85%;
     padding: 0; }
+  
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%; }
+  .side-container {
+    width: 100%;
+  }
   .column,
   .columns {
     margin-left: 4%; }

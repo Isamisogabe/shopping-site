@@ -19,6 +19,25 @@ html {
     font-size: $size + px;
     font-size: ($size/ $base) * 1rem;
 }
+@mixin placeholderColor($color) {
+    &:placeholder-shown {
+        color: $color;
+    }
+    &::-webkit-input-placeholder {
+        color:$color;
+    }
+    &:-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &::-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color:$color;
+    }
+}
 
 a {
   text-decoration: none;
@@ -52,6 +71,7 @@ header {
       
       ul {
         margin-bottom: 0;
+        text-align: right;
         li {
           list-style-type: none;
           display: inline-block;
@@ -62,6 +82,9 @@ header {
             height: 20px;
             padding-top: 6px;
             margin-top: 6px;
+          }
+          &:last-child {
+            padding: 0;
           }
         }
       }
@@ -141,6 +164,10 @@ header {
           padding: 10px;
           border-right: 2px solid $baseColor;
           border-bottom: 2px solid $baseColor;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       // .items
@@ -196,6 +223,10 @@ header {
           padding: 10px;
           border-right: 2px solid $baseColor;
           border-bottom: 2px solid $baseColor;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
@@ -231,62 +262,79 @@ header {
     }
     // @media(max-width: 550px)
     
+    #pagetop {
+      color: black;
+    }
     #shopping-guide {
       margin: 20px 0;
       .shopping-guide-title {
         margin: 20px 0;
         
       }
-      
-      #derivery-description{
-        
-        background-color: white;
-        padding: 10px;
-        h4 {
-          @include fontsize(16);
-          color: $brawnColor;
-          font-weight: bold;
-        }
-        ul {
-          li {
-            margin-bottom: 0;
+      .row {
+        @include display-flex(flex);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        @include align-items(stretch);
+        #derivery-description{
+          
+          background-color: white;
+          padding: 10px;
+          h4 {
+            @include fontsize(16);
             color: $brawnColor;
-            list-style-type: square;
             font-weight: bold;
+          }
+          div {
+            h4 {
+              margin-bottom: 0;
+              color: $brawnColor;
+              list-style-type: square;
+              font-weight: bold;
+              
+              @include fontsize(14);
+              span {
+                @include fontsize(22);
+              }
+            }
             
-            @include fontsize(14);
-          }
-          p {
-            @include fontsize(12);
-            margin-bottom: 10px;
+            p {
+              @include fontsize(12);
+              margin-bottom: 10px;
+            }
           }
         }
-      }
-      //#derivery-description
-      
-      #cashing {
-        padding: 10px;
-        background-color: white;
-        h4 {
-          @include fontsize(16);
-          color: $brawnColor;
-          font-weight: bold;
-        }
-        ul {
-          li {
-            margin-bottom: 0;
+        //#derivery-description
+        
+        #cashing {
+          padding: 10px;
+          background-color: white;
+          
+          h4 {
+            @include fontsize(16);
             color: $brawnColor;
-            list-style-type: square;
             font-weight: bold;
-            @include fontsize(14);
           }
-          p {
-            @include fontsize(12);
-            margin-bottom: 10px;
+          div {
+            h4 {
+              margin-bottom: 0;
+              color: $brawnColor;
+              
+              font-weight: bold;
+              @include fontsize(14);
+              span {
+                @include fontsize(22);
+              }
+            }
+            p {
+              @include fontsize(12);
+              margin-bottom: 10px;
+            }
           }
         }
+        // #cashing
       }
-      // #cashing
+      // .row
     }
     // #shopping-guide
     @media(max-width: 550px) {
@@ -298,37 +346,45 @@ header {
             display: block;
             text-align: center;
         }
-        #derivery-description {
-          margin-bottom: 10px;
-          h4 {
-            @include fontsize(22);
-          }
-          ul {
-            li {
-              @include fontsize(20);
-            }
-            p {
-              @include fontsize(14);
-            }
-          }
-        }
-        // #derivery-description
         
-        #cashing {
-          margin-bottom: 10px;
-          h4 {
-            @include fontsize(22);
-          }
-          ul {
-            li {
-              @include fontsize(20);
+        
+       .row {
+          @include flex-direction(column);
+          #derivery-description {
+            margin-bottom: 10px;
+            h4 {
+              @include fontsize(22);
             }
-            p {
-              @include fontsize(14);
+            ul {
+              li {
+                @include fontsize(20);
+              }
+              p {
+                @include fontsize(14);
+              }
             }
           }
+          // #derivery-description
+          
+          #cashing {
+            margin-bottom: 10px;
+            h4 {
+              @include fontsize(22);
+              margin-bottom: 0;
+            }
+            div {
+              h4 {
+                @include fontsize(16);
+                margin: 0;
+              }
+              p {
+                @include fontsize(14);
+              }
+            }
+          }
+          // #cashing
         }
-        // #cashing
+        // .row
       }
       // #shopping-guide
     }
@@ -356,6 +412,9 @@ header {
           @include border-radius(0);
           border: 0;
           margin: 0;
+          font-style: italic;
+          color: black;
+          @include placeholderColor(darken($baseColor, 30%));
           
         }
         img {
@@ -381,7 +440,7 @@ header {
         position: relative;
         .title-icon {
           position: absolute;
-          top: 15px;
+          top: 18px;
           right: 15px;
         }
         
@@ -431,7 +490,7 @@ header {
           padding: 10px;
           background-color: white;
           margin: 0;
-          border-bottom: 1px solid $brawnColor;
+          border-bottom: 1px solid $baseColor;
           
           img {
             position: absolute;
@@ -547,10 +606,12 @@ header {
 // -------------------- #Contents ---------------- //
 
 footer {
-  border-top: 2px solid $brawnColor;
+  
   padding-top: 20px;
   ul {
     text-align: center;
+    border-top: 2px solid $brawnColor;
+    padding-top: 20px;
     li {
       display: inline-block;
       list-style-type: square;
