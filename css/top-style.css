@@ -65,22 +65,21 @@ header .navbar .sp-header {
         margin-right: auto; }
     header .navbar .sp-header #sp-header-list {
       position: relative;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 10px; }
+      header .navbar .sp-header #sp-header-list i {
+        margin-right: 10px; }
       header .navbar .sp-header #sp-header-list #humburger-btn {
         cursor: pointer; }
       header .navbar .sp-header #sp-header-list #sp-header-toggle {
-        position: absolute;
-        top: 25px;
-        left: 220px;
-        display: none;
-        z-index: 2; }
+        display: none; }
         header .navbar .sp-header #sp-header-list #sp-header-toggle li {
           list-style-type: none;
           background-color: white;
           border-bottom: 1px solid #e5e0d7;
           margin: 0;
           padding: 10px;
-          text-align: left; } }
+          text-align: center; } }
 
 #contents #main {
   /* 
@@ -298,7 +297,8 @@ header .navbar .sp-header {
       -webkit-flex-direction: column;
       flex-direction: column; }
       #contents #main #shopping-guide .row #derivery-description {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 20px; }
         #contents #main #shopping-guide .row #derivery-description h4 {
           font-size: 22px;
           font-size: 2.2rem; }
@@ -309,7 +309,8 @@ header .navbar .sp-header {
           font-size: 14px;
           font-size: 1.4rem; }
       #contents #main #shopping-guide .row #cashing {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 20px; }
         #contents #main #shopping-guide .row #cashing h4 {
           font-size: 22px;
           font-size: 2.2rem;
@@ -480,8 +481,9 @@ footer {
   padding-top: 20px; }
   footer ul {
     text-align: center;
-    border-top: 2px solid #887f69;
-    padding-top: 20px; }
+    border-top: 1px solid #887f69;
+    padding-top: 20px;
+    margin-bottom: 5px; }
     footer ul li {
       display: inline-block;
       list-style-type: square;
@@ -509,6 +511,9 @@ footer {
   -webkit-backface-visibility: visible;
   transition: opacity .2s ease;
   border-radius: 30px; }
+  @media (max-width: 550px) {
+    .owl-theme .owl-dots .owl-dot span {
+      width: 30px; } }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #9d1a2d; }

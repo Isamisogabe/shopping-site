@@ -118,12 +118,26 @@ header {
         }
         
         #sp-header-list {
-          
+          position: relative;
           text-align: center;
+          margin-bottom: 0;
+          i {
+            margin-right: 10px;
+          }
+          #humburger-btn {
+            cursor: pointer;
+          }
           #sp-header-toggle {
+            
             display: none;
+            
             li {
               list-style-type: none;
+              background-color: white;
+              border-bottom: 1px solid darken($baseColor, 10%);
+              margin: 0;
+              padding: 10px;
+              text-align: center;
             }
           }
         }
@@ -423,15 +437,22 @@ header {
       }
       // .quantity
       
+      // 商品説明文が入るところ
       .description {
         .title {
           padding: 10px 0;
           border-bottom: 1px solid $brawnColor;
-          @include fontsize(18);
+          
           h4 {
             font-weight: bold;
             color: $brawnColor;
             margin: 0;
+            @include fontsize(18);
+          }
+          @media(max-width: 550px) {
+            h4 {
+              @include fontsize(24);
+            }
           }
         }
         
@@ -445,12 +466,16 @@ header {
             font-weight: bold;
             span {
               @include fontsize(30);
+              
+            }
+            @media(max-width: 550px) {
+              @include fontsize(20);
             }
           }
         }
         // .content-title
         p {
-          font-weight: bold;
+          font-weight: normal;
         }
         // サイズ、色設定部分(テーブル)
         table {
@@ -655,6 +680,7 @@ header {
           @include flex-direction(column);
           #derivery-description {
             margin-bottom: 10px;
+            padding: 20px;
             h4 {
               @include fontsize(22);
             }
@@ -671,6 +697,7 @@ header {
           
           #cashing {
             margin-bottom: 10px;
+            padding: 20px;
             h4 {
               @include fontsize(22);
               margin-bottom: 0;
@@ -920,6 +947,7 @@ footer {
     text-align: center;
     border-top: 2px solid $brawnColor;
     padding-top: 20px;
+    margin-bottom: 5px;
     li {
       display: inline-block;
       list-style-type: square;

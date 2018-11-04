@@ -125,22 +125,24 @@ header {
         #sp-header-list {
           position: relative;
           text-align: center;
+          margin-bottom: 10px;
+          i {
+            margin-right: 10px;
+          }
           #humburger-btn {
             cursor: pointer;
           }
           #sp-header-toggle {
-            position: absolute;
-            top: 25px;
-            left: 220px;
+            
             display: none;
-            z-index: 2;
+            
             li {
               list-style-type: none;
               background-color: white;
               border-bottom: 1px solid darken($baseColor, 10%);
               margin: 0;
               padding: 10px;
-              text-align: left;
+              text-align: center;
             }
           }
         }
@@ -422,6 +424,7 @@ header {
           @include flex-direction(column);
           #derivery-description {
             margin-bottom: 10px;
+            padding: 20px;
             h4 {
               @include fontsize(22);
             }
@@ -438,6 +441,7 @@ header {
           
           #cashing {
             margin-bottom: 10px;
+            padding: 20px;
             h4 {
               @include fontsize(22);
               margin-bottom: 0;
@@ -680,8 +684,9 @@ footer {
   padding-top: 20px;
   ul {
     text-align: center;
-    border-top: 2px solid $brawnColor;
+    border-top: 1px solid $brawnColor;
     padding-top: 20px;
+    margin-bottom: 5px;
     li {
       display: inline-block;
       list-style-type: square;
@@ -718,6 +723,9 @@ footer {
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 30px;
+    @media(max-width: 550px) {
+      width: 30px;
+    }
     
 }
 

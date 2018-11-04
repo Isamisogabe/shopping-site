@@ -61,11 +61,22 @@ header .navbar {
           margin-left: auto;
           margin-right: auto; }
       header .navbar .sp-header #sp-header-list {
-        text-align: center; }
+        position: relative;
+        text-align: center;
+        margin-bottom: 0; }
+        header .navbar .sp-header #sp-header-list i {
+          margin-right: 10px; }
+        header .navbar .sp-header #sp-header-list #humburger-btn {
+          cursor: pointer; }
         header .navbar .sp-header #sp-header-list #sp-header-toggle {
           display: none; }
           header .navbar .sp-header #sp-header-list #sp-header-toggle li {
-            list-style-type: none; } }
+            list-style-type: none;
+            background-color: white;
+            border-bottom: 1px solid #e5e0d7;
+            margin: 0;
+            padding: 10px;
+            text-align: center; } }
 
 #contents {
   width: 80%;
@@ -299,13 +310,17 @@ header .navbar {
             margin-left: 80px; } }
     #contents #main #detail-item .description .title {
       padding: 10px 0;
-      border-bottom: 1px solid #887f69;
-      font-size: 18px;
-      font-size: 1.8rem; }
+      border-bottom: 1px solid #887f69; }
       #contents #main #detail-item .description .title h4 {
         font-weight: bold;
         color: #887f69;
-        margin: 0; }
+        margin: 0;
+        font-size: 18px;
+        font-size: 1.8rem; }
+      @media (max-width: 550px) {
+        #contents #main #detail-item .description .title h4 {
+          font-size: 24px;
+          font-size: 2.4rem; } }
     #contents #main #detail-item .description .content-title {
       padding: 20px 0;
       font-size: 18px;
@@ -317,8 +332,12 @@ header .navbar {
         #contents #main #detail-item .description .content-title h4 span {
           font-size: 30px;
           font-size: 3rem; }
+        @media (max-width: 550px) {
+          #contents #main #detail-item .description .content-title h4 {
+            font-size: 20px;
+            font-size: 2rem; } }
     #contents #main #detail-item .description p {
-      font-weight: bold; }
+      font-weight: normal; }
     #contents #main #detail-item .description table {
       border: 1px solid #e5e0d7;
       width: 100%; }
@@ -465,7 +484,8 @@ header .navbar {
       -webkit-flex-direction: column;
       flex-direction: column; }
       #contents #main #shopping-guide .row #derivery-description {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 20px; }
         #contents #main #shopping-guide .row #derivery-description h4 {
           font-size: 22px;
           font-size: 2.2rem; }
@@ -476,7 +496,8 @@ header .navbar {
           font-size: 14px;
           font-size: 1.4rem; }
       #contents #main #shopping-guide .row #cashing {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 20px; }
         #contents #main #shopping-guide .row #cashing h4 {
           font-size: 22px;
           font-size: 2.2rem;
@@ -653,7 +674,8 @@ footer {
   footer ul {
     text-align: center;
     border-top: 2px solid #887f69;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-bottom: 5px; }
     footer ul li {
       display: inline-block;
       list-style-type: square;

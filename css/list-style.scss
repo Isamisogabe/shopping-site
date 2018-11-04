@@ -112,15 +112,30 @@ header {
         }
         
         #sp-header-list {
-          
+          position: relative;
           text-align: center;
+          margin-bottom: 10px;
+          i {
+            margin-right: 10px;
+          }
+          #humburger-btn {
+            cursor: pointer;
+          }
           #sp-header-toggle {
+            
             display: none;
+            
             li {
               list-style-type: none;
+              background-color: white;
+              border-bottom: 1px solid darken($baseColor, 10%);
+              margin: 0;
+              padding: 10px;
+              text-align: center;
             }
           }
         }
+        
       }
       
     }  // .sp-header
@@ -679,6 +694,7 @@ footer {
     text-align: center;
     border-top: 2px solid $brawnColor;
     padding-top: 20px;
+    margin-bottom: 5px;
     li {
       display: inline-block;
       list-style-type: square;
